@@ -1,0 +1,88 @@
+.products-container {
+}
+.gallery {
+  text-align: center;
+  padding: 10px;
+}
+.gallery h3 {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: fantasy;
+  letter-spacing: 30px;
+  color: brown;
+}
+.card {
+  text-align: center;
+}
+.cards-container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-container .card {
+  width: 350px;
+  margin-bottom: 50px;
+  border: 1px solid #333;
+  padding: 20px;
+}
+.card-container .card .card-title {
+  font-size: 20px;
+}
+.card-container .card .btn {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+.card-container .card .btn:hover {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+.card-container .card img {
+  width: 300px;
+  height: 430px;
+}
+.cat-buttons button {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+  height: 35px;
+  background-color: brown;
+  color: white;
+  transition: 0.3s;
+}
+.cat-buttons button:focus {
+  background-color: rgba(165, 42, 42, 0.685);
+  /* padding: 10px; */
+  font-size: 17px;
+  border-radius: 5px;
+}
+.cat-buttons button:hover {
+  background-color: rgba(165, 42, 42, 0.685);
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .card-container .card {
+    width: fit-content;
+  }
+  .cards-container {
+    margin: 35px;
+  }
+  .gallery h3 {
+    font-size: 45px;
+    letter-spacing: 10px;
+  }
+  .card-container .card img {
+    width: 250px;
+    height: 380px;
+  }
+  .card-container .card {
+    margin: 20px auto;
+  }
+}

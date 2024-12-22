@@ -1,0 +1,84 @@
+.area-container {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  margin-bottom: -20px;
+}
+.area-container .contact-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: black;
+  width: 50%;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+.area-container .contact-text {
+  padding: 10px;
+  text-align: center;
+}
+.area-container .contact-text h3 {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: fantasy;
+  letter-spacing: 30px;
+  color: brown;
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-area form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+.contact-area form input {
+  width: 44%;
+  height: 60px;
+  margin: 20px;
+}
+.contact-area form input::placeholder,
+.contact-area form textarea::placeholder {
+  padding: 15px;
+  font-size: 18px;
+}
+.contact-area form textarea {
+  width: 95%;
+  height: 300px;
+  margin-left: 20px;
+}
+.area-container .contact-area button {
+  font-size: 30px;
+  cursor: pointer;
+  height: 60px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+/* Media */
+@media (max-width: 760px) {
+  .area-container .contact-text {
+  }
+  .area-container .contact-text h3 {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  .area-container .contact-area {
+    width: 80%;
+  }
+  .contact-area form input {
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+  }
+  .contact-area form textarea {
+    height: 150px;
+  }
+  .area-container .contact-area button {
+    font-size: 20px;
+    height: 40px;
+  }
+}
